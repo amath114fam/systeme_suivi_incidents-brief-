@@ -13,7 +13,6 @@ Dans ce projet, plusieurs **bonnes pratiques professionnelles** ont été appliq
 1. **Gestion propre des ressources :**
    - Chaque fonction ouvre une connexion et un curseur au début.
    - Les curseurs et connexions sont fermés dans un bloc `finally`, garantissant que les ressources sont toujours libérées même en cas d'erreur.
-   - Utilisation de `buffered=True` pour éviter les erreurs `Unread result found`.
 
 2. **Validation des données utilisateur :**
    - Les entrées utilisateur sont systématiquement vérifiées (ex: email, titre, description, niveau d'urgence, ID de ticket).
